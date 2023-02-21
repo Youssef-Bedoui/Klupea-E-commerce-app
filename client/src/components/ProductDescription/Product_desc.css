@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.product_desc .cont {
+    height: calc(100vh - 75px);
+    background-color: transparent !important;
+}
+
+@media(max-width: 760px) {
+    .product_desc .cont {
+        height: auto;
+        background-color: transparent !important;
+    }
+
+    .product_desc img {
+        height: 200px !important;
+        object-fit: cover;
+    }
+}
+
+.sizes span {
+    color: var(--black);
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.isActive {
+    background-color: var(--blue);
+    color: var(--white) !important;
+}
+
+.sizes span:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.product_desc img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.product_desc .description_section {
+    margin: 30px auto;
+}
+
+.product_desc .title {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+
+.desc_prices .price {
+    font-family: 'Sora', sans-serif;
+}
+
+.desc_prices .lastPrice {
+    font-family: 'Sora', sans-serif;
+    text-decoration: line-through;
+    margin-left: 20px;
+    font-size: 15px !important;
+    color: gray;
+}
+
+.buttons svg {
+    vertical-align: top;
+    position: relative;
+    right: 20px;
+}
+
+.buttons .addToBag {
+    margin: 30px 0px;
+    padding: 20px 0px;
+    color: var(--white);
+    background-color: orange;
+    font-weight: bold;
+    border: 1px solid gray;
+}
+
+.buttons .addToBag:hover {
+    background-color: rgb(197, 130, 5);
+}
+
+.buttons .whish {
+    margin: 30px 0;
+    padding: 20px 0px;
+    color: var(--white);
+    background-color: rgb(243, 38, 72);
+    font-weight: bold;
+    border: 1px solid gray;
+}
+
+.buttons .whish:hover {
+    background-color: rgb(192, 3, 35);
+}
+
+.numberOfItems {
+    text-align: center;
+    border: none;
+    background-color: rgb(211, 209, 209);
+    ;
+}
+
+.numberOfItems:focus {
+    outline: 1px solid gray;
+}
+
+.minusBtn,
+.plusBtn {
+    margin: 0 5px;
+    font-size: 20px;
+    width: 40px;
+    border: none;
+    font-weight: bold;
+    transition: .2s ease;
+    border-radius: 5px;
+    color: var(--black);
+    border: 2px solid var(--black);
+    transition: .2s ease;
+}
+
+.minusBtn:active,
+.plusBtn:active {
+    background-color: rgb(168, 160, 160);
+}
+
+.product_desc.dark .size {
+    color: var(--white);
+}

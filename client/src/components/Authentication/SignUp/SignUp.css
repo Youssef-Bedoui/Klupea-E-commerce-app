@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+.Register {
+    background-image: url("../../../images/mirror-lake-01.jpg");
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.card-registration {
+    font-family: 'Poppins', sans-serif !important;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 15px;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 10px;
+}
+
+.form-outline>input {
+    outline: 1px solid var(--black);
+    border-radius: 0px;
+    transition: .2s ease;
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 10px auto;
+}
+
+.form-outline>input:focus {
+    outline: 1px solid var(--black);
+    box-shadow: none;
+    border: none;
+}
+
+.form-outline>input:hover,
+.form-outline>input:focus {
+    outline: 1px solid gray;
+}
+
+.submit {
+    background-color: var(--black);
+    border-radius: 0px;
+    color: white;
+    transition: .3s ease;
+
+}
+
+.submit:hover {
+    color: var(--white);
+    background-color: rgb(46, 46, 46);
+}

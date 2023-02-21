@@ -1,0 +1,13 @@
+.collection_title.new h2 {
+    animation: arrival-pulse .8s infinite alternate !important;
+}
+
+@keyframes arrival-pulse {
+    0% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    100% {
+        background-color: var(--pink);
+    }
+}

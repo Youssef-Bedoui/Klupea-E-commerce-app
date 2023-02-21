@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+.signIn {
+    background-image: url("../../../images/mirror-lake-01.jpg");
+    height: 100vh;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.wrapper {
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 30px 40px;
+    padding-top: 0px;
+    border: 1px solid gray;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+}
+
+.h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--black);
+    font-style: italic
+}
+
+.h4 {
+    font-family: 'Poppins', sans-serif
+}
+
+.input-field {
+    border-radius: 0px;
+    padding: 5px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--black);
+    color: var(--black)
+}
+
+.input-field:hover {
+    color: gray;
+    border: 1px solid gray
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 0px 2px;
+    font-family: 'Poppins', sans-serif
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none
+}
+
+.forget_btn {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700
+}
+
+.forget_btn:hover {
+    text-decoration: none;
+    color: gray
+}
+
+.option {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+.option label.text-muted {
+    display: block;
+    cursor: pointer
+}
+
+.option input {
+    display: none
+}
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.option input:checked~.checkmark:after {
+    display: block
+}
+
+.option .checkmark:after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: block;
+    background: var(--black);
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    transition: 300ms ease-in-out 0s;
+    border: 1px solid var(--black)
+}
+
+.option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.btn.btn-block {
+    border-radius: 0px;
+    background-color: var(--black);
+    color: #fff;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn.btn-block:hover {
+    background-color: gray
+}
+
+@media(max-width: 760px) {
+    .wrapper {
+        margin: 10px;
+        box-shadow: none !important;
+    }
+}
+
+@media(max-width:424px) {
+    .wrapper {
+        padding: 30px 10px;
+        margin: 5px;
+    }
+
+    .option {
+        position: relative;
+        padding-left: 22px
+    }
+
+    .option label.text-muted {
+        font-size: 0.95rem
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 2px
+    }
+
+    .option .checkmark:after {
+        top: 50%
+    }
+
+    #forgot {
+        font-size: 0.95rem
+    }
+
+
+}

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.Bag.dark .header {
+    background-color: rgb(8, 0, 117) !important;
+
+}
+
+.bag_icon {
+    font-size: 40px !important;
+}
+
+.list.dark .left_list {
+    background-color: black !important;
+}
+
+.list.dark .itemCard {
+    background-color: var(--dark);
+    box-shadow: 2px 3px 7px rgb(104, 104, 104);
+}
+
+.list.dark .row {
+    color: white;
+}
+
+.list.dark .sizes button,
+.list.dark .quantity button {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.ReactModal__Content {
+    background-color: rgba(255, 255, 255, .3) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.LoginModal {
+    min-width: 50%;
+}
+
+.header {
+    background-color: var(--white);
+}
+
+.header a {
+    color: var(--blue);
+
+}
+
+.header a:hover {
+    color: var(--blue);
+}
+
+.header .active {
+    color: var(--pink);
+    transform: scale(1.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Purshase List */
+
+.deleteBtn {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.left_list {
+    background-color: transparent;
+    height: calc(100vh - 75px);
+    overflow-y: scroll;
+}
+
+.dropdown-toggle {
+    font-size: 15px !important;
+    border: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-item {
+    margin: 0 !important;
+}
+
+@media (max-width: 920px) {
+    .left_list {
+        background-color: var(--white);
+        height: auto;
+    }
+
+    .itemCard {
+        height: 100px !important;
+        width: 90% !important;
+    }
+
+    .itemCard img {
+        min-width: 100px !important;
+    }
+
+    .itemCard .title {
+        font-size: 20px !important;
+        border: none !important;
+
+    }
+
+    .prices .price {
+        font-size: 12px !important;
+    }
+
+    .prices .lastPrice {
+        font-size: 8px !important;
+    }
+
+    .sizes button,
+    .quantity button {
+        font-size: 10px !important;
+    }
+
+    .dropdown-item {
+        font-size: 10px;
+    }
+
+
+    .header {
+        position: sticky;
+        width: 100%;
+        background-color: var(--white) !important;
+        top: 80px;
+        border-radius: 0 !important;
+        z-index: 3;
+        margin: 0 !important;
+    }
+
+    .left_list {
+        overflow: unset;
+    }
+}
+
+.itemCard {
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 2px 3px 7px lightgray;
+
+}
+
+.itemCard img {
+    height: 100%;
+    min-width: 150px;
+    justify-self: center;
+    border-radius: 20px;
+}
+
+.description {
+    height: 100%;
+    width: 100%;
+    padding: 5px 0;
+}
+
+
+.itemCard .title {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.prices .price {
+    font-weight: bold;
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+.prices .lastPrice {
+    font-weight: bold;
+    font-size: 13px;
+    color: gray;
+    text-decoration: line-through;
+    padding: 0 20px;
+    font-family: 'Sora', sans-serif;
+}
+
+.sizes button,
+.quantity button {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    font-weight: bold;
+
+}
+
+.price_details {
+    border-left: 1px solid lightgray;
+}
+
+.price_details .container {
+    width: 100%;
+    height: 70%;
+    margin: 10px auto;
+}
+
+.delivery_info.dark {
+    background-color: orange !important;
+    color: black !important;
+}
+
+.price_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_title {
+    font-weight: bold;
+}
+
+.price_detail .price {
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+}
+
+.one_detail {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.orderBtn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+    background-color: var(--blue);
+    box-shadow: 0 0 5px gray;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.bag_modal a {
+    width: 100%;
+    border-radius: 0px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid;
+}
+
+#login_btns {
+    z-index: 1000;
+}
+
+
+.payment_container {
+    height: calc(100vh);
+}
+
+.edit_address {
+    cursor: pointer;
+}
+
+.edit_address:hover {
+    font-size: larger;
+    transition: .3s ease;
+}
+
+
+/* alert style change */
+.__myAlertModal {
+    margin: 15% auto !important;
+}
+
+@media (max-width:480px) {
+    .__myAlertModal {
+        margin: 40% auto !important;
+    }
+
+    .itemCard img {
+        min-width: 25% !important;
+    }
+}
