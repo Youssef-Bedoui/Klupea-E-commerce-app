@@ -1,0 +1,126 @@
+.Main {
+    /* margin: 20px auto; */
+    overflow-x: hidden;
+}
+
+.Main.dark .hero,
+.Main.dark .hero_title,
+.Main.dark.title_sec {
+    color: black !important;
+}
+
+.hero {
+    height: calc(100vh - 70px);
+    background: url("../../images/home_back.png") no-repeat;
+    background-size: cover;
+}
+
+.hero_description {
+    padding: 0px 20px;
+    width: fit-content;
+    font-family: 'proxima_nova', serif;
+}
+
+.heroBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(53, 53, 53, 0.336);
+    backdrop-filter: blur(2px);
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.hero_title1 {
+    font-size: 60px;
+    font-family: 'proxima_nova';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.hero_title2 {
+    font-size: 60px;
+    font-family: 'ubuntu', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.title_sec {
+    font-family: "migra_extralight";
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.menBtn,
+.womenBtn,
+.kidsBtn {
+    padding: 10px 20px;
+    border-radius: 0px;
+    background-color: transparent;
+    transition: .2s ease;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid var(--white);
+}
+
+.menBtn:hover,
+.womenBtn:hover,
+.kidsBtn:hover {
+    background-color: transparent;
+    background-color: white;
+    color: var(--black);
+    font-weight: bold;
+    border: 2px solid var(--white);
+}
+
+/* for phone screen  */
+@media screen and (max-width: 760px) {
+    .hero {
+        height: calc(100vh - 70px);
+        background: url("../../images/home_back.png") no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        align-items: flex-start;
+    }
+
+    .hero_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
+        background-color: rgba(240, 248, 255, 0.247);
+        width: 100%;
+    }
+
+    .hero_title1 {
+        font-size: 30px;
+    }
+
+    .hero_title2 {
+        font-size: 40px;
+    }
+
+    .title2 {
+        font-family: "migra_extralight";
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .menBtn,
+    .womenBtn,
+    .kidsBtn {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+}

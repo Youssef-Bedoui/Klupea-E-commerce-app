@@ -1,0 +1,72 @@
+.App {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.conn_failed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1d2030c9;
+  color: rgb(255, 255, 255);
+}
+.offline_icon{
+ font-size: 60px !important;
+}
+
+.conn_failed h1{
+  font-size: 40px;
+}
+
+:root {
+  --white: #fff;
+  --black: #000000;
+  --blue: #0B62E0;
+  --pink: #FF0116;
+  --green: #02d413c9;
+  --dark: #1F1F1F;
+}
+
+.search_button {
+  border: 2px solid #E9ECEF;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.search_button:focus {
+  outline: none;
+  border: 2px solid #E9ECEF;
+  box-shadow: none;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Tan_meringue";
+  src: url("./assets/fonts/Meringue.ttf");
+}
+
+@font-face {
+  font-family: "migra_extralight";
+  src: url("./assets/fonts/FontsFree-Net-Migra-Extralight.ttf");
+}
+@font-face {
+  font-family: "proxima_nova";
+  src: url("./assets/fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("./assets/fonts/Ubuntu-Light.ttf");
+}
+
+.light {
+  background-color: #f5f5f5;
+}
+
+.dark {
+  background-color: #000000;
+  color: #d4d4d4;
+}

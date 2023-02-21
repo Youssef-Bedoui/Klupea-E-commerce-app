@@ -1,0 +1,66 @@
+.Category_sections {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px lightgray,
+        -0px -0px 5px lightgray;
+    border-radius: 10px;
+}
+
+.Category_sections h4 {
+    font-family: "Tajawal";
+    color: var(--white) !important;
+    background-color: var(--pink) !important;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-radius: 10px 40px 40px 0;
+    width: 30%;
+}
+
+.Category_sections .category_image {
+    height: 100px;
+    position: relative;
+    box-shadow:
+        0 0 5px #818181,
+        inset 0 0 10px #818181;
+
+}
+
+.Category_sections .section_container {
+    transition: .1s ease;
+    margin: 5px 0;
+}
+
+.Category_sections .section_container:hover {
+    transform: scale(1.02);
+}
+
+.Category_sections h4 {
+    background-color: #c9c8c8;
+    color: var(--white) !important;
+}
+
+.Category_sections img {
+    height: 100%;
+    width: auto;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.Category_sections .section_container .cloth_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    left: 20%;
+    background-color: var(--white);
+    padding: 5px;
+}
+
+.Category_sections.dark .cloth_title {
+    color: #DEE2E6 !important;
+}
+
+.Category_sections.dark .section_container .cloth_title {
+    color: var(--black) !important;
+}

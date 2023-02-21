@@ -1,0 +1,20 @@
+.Login_navbar {
+    height: 75px;
+    background-color: #C0C2D1;
+    border-bottom: none !important;
+}
+
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar img {
+        height: 40px;
+        overflow: hidden;
+    }
+
+}
+

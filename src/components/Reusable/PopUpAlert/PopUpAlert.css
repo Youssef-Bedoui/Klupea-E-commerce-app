@@ -1,0 +1,36 @@
+.WishModalSuccess {
+    min-width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: 2px solid;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px !important;
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.WishModalSuccess-content {
+    background-color: #fafaffdc;
+    box-shadow: 0 0 5px rgb(43, 43, 43);
+    border-radius: 10px;
+    border: none;
+    color: black;
+    padding: 10px;
+}
+
+.done_icon {
+    color: var(--blue);
+}

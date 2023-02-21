@@ -1,0 +1,58 @@
+.subscribe {
+    background-color: rgba(56, 52, 52, 0.671);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.subscribe.dark {
+    background-color: rgb(39, 39, 39);
+    border-top: 2px solid gray;
+}
+
+.subscribe.dark .container .row {
+    background-color: rgb(39, 39, 39) !important;
+}
+
+.subscribe .btn {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    font-weight: bold;
+}
+
+.subscribe input[type="text"] {
+    font-size: 15px;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+
+.subscribe .subscribe_btn {
+    background-color: transparent !important;
+    border: 2px solid white;
+    color: var(--white) !important;
+    transition: .5s ease;
+}
+
+.subscribe .subscribe_btn:hover {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+}
+
+.email_input {
+    position: relative;
+}
+
+.email_input::before {
+    content: "\f0e0";
+    color: black;
+    /* this is the FontAwesome envelope icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

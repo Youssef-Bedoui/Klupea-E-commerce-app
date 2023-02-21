@@ -1,0 +1,29 @@
+.wishList {
+    min-height: 100vh;
+}
+
+.wish_container {
+    min-height: 100vh;
+}
+
+.wishList .container .wish_table {
+    margin-bottom: 10px;
+}
+
+.wish_table {
+    margin-bottom: 20px;
+}
+
+.fav_icon {
+    font-size: 40px !important
+}
+
+.wish_img {
+    height: 70px;
+    width: auto;
+    margin: 10px auto;
+}
+
+.delete_wish {
+    border-right: 2px solid rgb(126, 126, 126);
+}

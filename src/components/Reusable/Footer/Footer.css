@@ -1,0 +1,42 @@
+.footer {
+    height: auto;
+    overflow: hidden;
+    background-color: #323232 !important;
+    color: #fff !important;
+}
+.footer.dark {
+    background-color: var(--dark) !important;
+    border-top: 2px solid gray;
+}
+
+.footer .img {
+    height: 50px;
+}
+
+.links ul li:hover {
+    cursor: pointer;
+}
+
+.contact ul li a i {
+    color: var(--white);
+    transition: .4s ease;
+}
+
+.contact ul li a i:hover {
+    color: var(--blue);
+}
+
+.links li {
+    font-size: 13px;
+    transition: .3s ease;
+}
+
+.links li:hover {
+    text-decoration: underline;
+}
+
+.links h6 {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+}

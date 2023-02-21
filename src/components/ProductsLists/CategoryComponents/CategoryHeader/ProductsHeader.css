@@ -1,0 +1,17 @@
+.image_category {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:400px) {
+    .image_category {
+        height: 150px;
+        width: 100%;
+    }
+}
+
+.image_category .img {
+    height: 100%;
+    width: 100%;
+}
