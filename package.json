@@ -2,7 +2,7 @@
   "name": "klupea",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://klupea-backend.onrender.com",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
