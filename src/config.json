@@ -1,4 +1,4 @@
 {
   "CLIENT_URL": "https://klupea-e-commerce-app.onrender.com",
-  "SERVER_URL": "https://klupea-backend.onrender.com"
+  "SERVER_URL": "http://localhost:4000"
 }
